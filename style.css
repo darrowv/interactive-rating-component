@@ -28,47 +28,63 @@ body {
   place-items: center;
 }
 
-.card {
-  background-color: var(--dark-blue);
-  width: 375px;
-  padding: 1.75em;
-  border-radius: 15px;
-  opacity: 0.8;
+.hidden {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  transition:
+    opacity 0.5s ease-out,
+    width 0.5s ease 0.5s,
+    height 0.5s ease 0.5s;
 }
 
-.card__icon {
+.card {
+  background-color: var(--dark-blue);
+  width: 420px;
+  height: 420px;
+  padding: 1.75em;
+  border-radius: 25px;
+  opacity: 0.7;
+}
+
+/* Rating side styles */
+
+.rating {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.rating__icon {
   background-color: var(--medium-dark-blue);
   padding: 0.5em;
   border-radius: 50%;
   display: flex;
-  width: 45px;
-  height: 45px;
+  width: 55px;
+  height: 55px;
   align-items: center;
   justify-content: center;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
 
-.card__text {
-  margin-bottom: 1.75em;
-}
-
-.card__text h1 {
+.rating__text h1 {
   margin-bottom: 0.5em;
 }
 
-.card__text p {
+.rating__text p {
   color: var(--light-grey);
 }
 
-.card__rating {
+.rating__numbers {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1.75em;
 }
 
-.card__rating div {
-  width: 45px;
-  height: 45px;
+.rating__numbers div {
+  width: 55px;
+  height: 55px;
+  font-weight: 700;
   background-color: var(--medium-dark-blue);
   padding: 0.5em;
   border-radius: 50%;
@@ -80,19 +96,19 @@ body {
   transition: 0.3s;
 }
 
-.card__rating .hover:hover {
+.rating__numbers .hover:hover {
   filter: brightness(3);
 }
 
-.card__rating .chosen {
+.rating__numbers .chosen {
   background-color: var(--orange);
   color: var(--white);
 }
 
-.card__button {
+.rating__button {
   width: 100%;
   border-radius: 50px;
-  padding: 0.8rem;
+  padding: 1rem;
   background-color: var(--orange);
   color: var(--white);
   border: none;
@@ -102,7 +118,32 @@ body {
   transition: 0.3s;
 }
 
-.card__button:hover {
+.rating__button:hover {
   background-color: var(--white);
   color: var(--orange);
 }
+
+/* Thanks side styles */
+
+.thanks {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.thanks__result {
+  background-color: var(--medium-dark-blue);
+  width: 60%;
+  margin: 0 auto;
+  padding: 0.4em;
+  border-radius: 20px;
+  color: var(--orange);
+}
+
+.thanks__text p {
+  color: var(--medium-grey);
+  padding-top: 1em;
+}
+
