@@ -29,13 +29,32 @@ body {
 }
 
 .hidden {
-  opacity: 0;
-  width: 0;
-  height: 0;
-  transition:
-    opacity 0.5s ease-out,
-    width 0.5s ease 0.5s,
-    height 0.5s ease 0.5s;
+  display: none !important;
+}
+
+.error {
+  animation: anima 350ms backwards ease-in-out;
+}
+
+@keyframes anima {
+  from {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(1%);
+  }
+  40% {
+    transform: translateX(-1%);
+  }
+  60% {
+    transform: translateX(1%);
+  }
+  80% {
+    transform: translateX(-1%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .card {
@@ -65,7 +84,6 @@ body {
   height: 55px;
   align-items: center;
   justify-content: center;
-  /* margin-bottom: 1em; */
 }
 
 .rating__text h1 {
@@ -108,12 +126,13 @@ body {
 .rating__button {
   width: 100%;
   border-radius: 50px;
-  padding: 1rem;
+  padding: 0.9rem;
+  font-size: 1em;
   background-color: var(--orange);
   color: var(--white);
   border: none;
   text-transform: uppercase;
-  letter-spacing: 0.25em;
+  letter-spacing: 0.2em;
   cursor: pointer;
   transition: 0.3s;
 }
@@ -146,4 +165,3 @@ body {
   color: var(--medium-grey);
   padding-top: 1em;
 }
-

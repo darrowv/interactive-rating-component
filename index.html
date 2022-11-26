@@ -22,13 +22,12 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Rating state start -->
 
     <div class="container">
       <div class="card">
 
         <!-- Rating side -->
-        <div class="rating">
+        <div class="rating" id="rating-side">
           <div class="rating__icon">
             <img src="./images/icon-star.svg" alt="star icon" />
           </div>
@@ -39,18 +38,18 @@
               feedback is appreciated to help us improve our offering!
             </p>
           </div>
-          <div class="rating__numbers">
+          <div class="rating__numbers" id="numbers">
             <div class="hover" id="one">1</div>
             <div class="hover" id="two">2</div>
             <div class="hover" id="three">3</div>
             <div class="hover" id="four">4</div>
             <div class="hover" id="five">5</div>
           </div>
-          <button class="rating__button">submit</button>
+          <button id="submit-btn" class="rating__button">submit</button>
         </div>
 
         <!-- Thanks side -->
-        <div class="thanks hidden">
+        <div class="thanks hidden" id="thanks-side">
           <div class="thanks__img">
             <img src="./images/illustration-thank-you.svg" alt="thank you" />
           </div>
@@ -64,9 +63,10 @@
               need more support, don't hesitate to get in touch!
             </p>
           </div>
-
         </div>
+
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

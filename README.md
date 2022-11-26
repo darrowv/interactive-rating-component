@@ -9,6 +9,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
   - [Screenshot](#screenshot)
   - [Links](#links)
   - [Built with](#built-with)
+  - [Resources](#resources)
 - [Author](#author)
 
 ## Overview
@@ -28,7 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Try it out here: [Add live site URL here](https://your-live-site-url.com)
+- Try it out [here]()
 
 ### Built with
 
@@ -37,7 +38,14 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Variables in CSS
+- CSS animation
+
+### Resources
+
+- [Animation for submit button](https://qna.habr.com/q/766181)
+- [Declaring variables in CSS using :root pseudo-class](https://www.digitalocean.com/community/tutorials/css-root-pseudo-class)
+
 
 ## Author
 
