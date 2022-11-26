@@ -1,4 +1,4 @@
-# Frontend Mentor - Interactive rating component solution
+# Interactive rating component solution
 
 This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
 
@@ -25,11 +25,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 ### Links
 
-- Try it out [here]()
+- Try it out [here](https://darrowv.github.io/interactive-rating-component)
 
 ### Built with
 
@@ -45,7 +45,6 @@ Users should be able to:
 
 - [Animation for submit button](https://qna.habr.com/q/766181)
 - [Declaring variables in CSS using :root pseudo-class](https://www.digitalocean.com/community/tutorials/css-root-pseudo-class)
-
 
 ## Author
 

@@ -16,6 +16,17 @@
   padding: 0;
 }
 
+@media (max-width: 550px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (max-width: 420px) {
+  html {
+    font-size: 11px;
+  }
+}
+
 body {
   font-family: "Overpass", sans-serif;
   background-color: var(--very-dark-blue);
@@ -64,6 +75,19 @@ body {
   padding: 1.75em;
   border-radius: 25px;
   opacity: 0.7;
+}
+
+@media (max-width: 550px) {
+  .card {
+    width: 70%;
+    height: 350px;
+  }
+}
+@media (max-width: 420px) {
+  .card {
+    width: 75%;
+    height: 320px;
+  }
 }
 
 /* Rating side styles */
@@ -142,6 +166,34 @@ body {
   color: var(--orange);
 }
 
+@media (max-width: 550px) {
+  .rating__icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .rating__numbers div {
+    width: 45px;
+    height: 45px;
+  }
+
+  .rating__button {
+    padding: 1.1rem;
+  }
+}
+@media (max-width: 420px) {
+  .rating__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .rating__numbers div {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+
 /* Thanks side styles */
 
 .thanks {
@@ -164,4 +216,13 @@ body {
 .thanks__text p {
   color: var(--medium-grey);
   padding-top: 1em;
+}
+
+@media (max-width: 420px) {
+  .thanks__img {
+    transform: scale(0.8);
+  }
+  .thanks__result {
+    width: 70%;
+  }
 }
