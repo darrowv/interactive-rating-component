@@ -74,7 +74,6 @@ body {
   height: 420px;
   padding: 1.75em;
   border-radius: 25px;
-  opacity: 0.7;
 }
 
 @media (max-width: 550px) {
