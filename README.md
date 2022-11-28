@@ -38,7 +38,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-- Variables in CSS
 - CSS animation
 
 ### Resources
