@@ -23,13 +23,13 @@
   </head>
   <body>
 
-    <div class="container">
+    <main class="container">
       <div class="card">
 
         <!-- Rating side -->
         <div class="rating" id="rating-side">
           <div class="rating__icon">
-            <img src="./images/icon-star.svg" alt="star icon" />
+            <img src="./images/icon-star.svg" alt="" />
           </div>
           <div class="rating__text">
             <h1>How did we do?</h1>
@@ -38,20 +38,27 @@
               feedback is appreciated to help us improve our offering!
             </p>
           </div>
-          <div class="rating__numbers" id="numbers">
-            <div class="hover" id="one">1</div>
-            <div class="hover" id="two">2</div>
-            <div class="hover" id="three">3</div>
-            <div class="hover" id="four">4</div>
-            <div class="hover" id="five">5</div>
-          </div>
+          <form>
+            <fieldset class="rating__radioset" id="rating-buttons">
+              <input type="radio" name="rating" id="one" value="1">
+              <label for="one">1</label>
+              <input type="radio" name="rating" id="two" value="2">
+              <label for="one">2</label>
+              <input type="radio" name="rating" id="three" value="3">
+              <label for="one">3</label>
+              <input type="radio" name="rating" id="four" value="4">
+              <label for="one">4</label>
+              <input type="radio" name="rating" id="five" value="5">
+              <label for="one">5</label>
+            </fieldset>
+          </form>
           <button id="submit-btn" class="rating__button">submit</button>
         </div>
 
         <!-- Thanks side -->
         <div class="thanks hidden" id="thanks-side">
           <div class="thanks__img">
-            <img src="./images/illustration-thank-you.svg" alt="thank you" />
+            <img src="./images/illustration-thank-you.svg" alt="" />
           </div>
           <div class="thanks__result">
             <p>You selected <span id="result">0</span> out of 5</p>
@@ -66,7 +73,7 @@
         </div>
 
       </div>
-    </div>
+    </main>
     <script src="script.js"></script>
   </body>
 </html>

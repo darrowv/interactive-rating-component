@@ -16,6 +16,10 @@
   padding: 0;
 }
 
+input {
+  font: inherit;
+}
+
 @media (max-width: 550px) {
   html {
     font-size: 13px;
@@ -117,33 +121,60 @@ body {
   color: var(--light-grey);
 }
 
-.rating__numbers {
+.rating__radioset {
+  border: none;
   display: flex;
   justify-content: space-between;
 }
 
-.rating__numbers div {
+.rating__radioset input[type="radio"] {
+  position: relative;
   width: 55px;
   height: 55px;
-  font-weight: 700;
-  background-color: var(--medium-dark-blue);
-  padding: 0.5em;
+  appearance: none;
+  border: none;
   border-radius: 50%;
   display: flex;
+  background-color: var(--medium-dark-blue);
+  cursor: pointer;
+  transition: 0.3s;
   align-items: center;
   justify-content: center;
   color: var(--light-grey);
-  cursor: pointer;
-  transition: 0.3s;
+  font-weight: 700;
 }
 
-.rating__numbers .hover:hover {
+#one::before {
+  content: "1";
+}
+
+#two::before {
+  content: "2";
+}
+
+#three::before {
+  content: "3";
+}
+
+#four::before {
+  content: "4";
+}
+
+#five::before {
+  content: "5";
+}
+
+.rating__radioset input[type="radio"]:not(:checked):hover {
   filter: brightness(3);
 }
 
-.rating__numbers .chosen {
+.rating__radioset input:checked {
   background-color: var(--orange);
   color: var(--white);
+}
+
+.rating__radioset label {
+  display: none;
 }
 
 .rating__button {
@@ -171,7 +202,7 @@ body {
     height: 45px;
   }
 
-  .rating__numbers div {
+  .rating__radioset input[type="radio"] {
     width: 45px;
     height: 45px;
   }
@@ -186,7 +217,7 @@ body {
     height: 40px;
   }
 
-  .rating__numbers div {
+  .rating__radioset input[type="radio"] {
     width: 40px;
     height: 40px;
   }

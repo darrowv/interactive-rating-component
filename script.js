@@ -1,6 +1,6 @@
 const ratingSide = document.getElementById("rating-side");
 const thanksSide = document.getElementById("thanks-side");
-const numbers = document.getElementById("numbers");
+const ratingButtons = document.getElementById("rating-buttons");
 const result = document.getElementById("result");
 const submitBtn = document.getElementById("submit-btn");
 
@@ -9,19 +9,8 @@ const toggleSide = () => {
   thanksSide.classList.remove("hidden");
 };
 
-numbers.addEventListener("click", (e) => {
-  if (numbers !== e.target) {
-    e.target.className = "chosen";
-
-    for (let child of numbers.children) {
-      if (child !== e.target) {
-        child.classList.remove("chosen");
-        child.classList.add("hover");
-      }
-    }
-  }
-
-  result.textContent = e.target.textContent;
+ratingButtons.addEventListener("click", (e) => {
+  result.textContent = e.target.value;
 });
 
 const validationError = (btn) => {
