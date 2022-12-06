@@ -44,6 +44,7 @@ Users should be able to:
 
 - [Animation for submit button](https://qna.habr.com/q/766181)
 - [Declaring variables in CSS using :root pseudo-class](https://www.digitalocean.com/community/tutorials/css-root-pseudo-class)
+- [About alt attribute in img tag](https://www.w3.org/WAI/tutorials/images/)
 
 ## Author
 
